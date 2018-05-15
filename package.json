@@ -1,0 +1,18 @@
+{
+  "name": "nuke-configkeeper",
+  "version": "1.0.0",
+  "description": "Configkeeper jsonrpc services",
+  "scripts": {
+    "invoke-request": "serverless invoke --function configkeeper --stage production --log --path \"data/request.json\"",
+    "deploy-dev": "serverless deploy",
+    "deploy-prod": "serverless deploy --stage production",
+    "package-prod": "serverless package --stage production"
+  },
+  "author": "ZhangPei",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.7.9",
+    "request": "^2.85.0",
+    "node-fetch": "^1.6.3"
+  }
+}
